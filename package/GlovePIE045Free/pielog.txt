@@ -1,0 +1,102 @@
+(0, 08-фев-2013 21:30:15) Initializing PieLog
+(0, 08-фев-2013 21:30:15) Initializing filemode variable
+(0, 08-фев-2013 21:30:15) Initializing PieSpeech
+(0, 08-фев-2013 21:30:15) Initializing PieVariables
+(0, 08-фев-2013 21:30:15) Initializing PieCursorUnit
+(0, 08-фев-2013 21:30:15) Initializing PieMouse
+(0, 08-фев-2013 21:30:15) Initializing PieKeyboard
+(0, 08-фев-2013 21:30:15) Initializing PieInput
+(0, 08-фев-2013 21:30:15) Initializing PieOSC
+(0, 08-фев-2013 21:30:15) Initializing PiePie
+(0, 08-фев-2013 21:30:15) Initializing PieFunction
+(0, 08-фев-2013 21:30:15) Initializing PieStatement
+(0, 08-фев-2013 21:30:15) Initializing PieExpression
+(0, 08-фев-2013 21:30:15) Initializing PieJoystick
+(0, 08-фев-2013 21:30:15) Initializing PieP5
+(0, 08-фев-2013 21:30:15) Initializing PieMidi
+(0, 08-фев-2013 21:30:15) Initializing PiePPJoy
+(0, 08-фев-2013 21:30:15) Initializing PieRemote
+(0, 08-фев-2013 21:30:15) Initializing Pie Speech Recognition
+(0, 08-фев-2013 21:30:15) Initializing PieScreen
+(0, 08-фев-2013 21:30:15) GetMonitorEDID
+(1, 08-фев-2013 21:30:15) Exception: EConvertError (2005, 65530) is not a valid DateDay pair
+(0, 08-фев-2013 21:30:15) Initializing PieWIndow
+(0, 08-фев-2013 21:30:15) Initializing PieCursors
+(0, 08-фев-2013 21:30:15) Initializing PieZ800
+(0, 08-фев-2013 21:30:15) Initializing PieIntersense
+(0, 08-фев-2013 21:30:15) Initializing PieFastrak
+(0, 08-фев-2013 21:30:15) Initializing PiePPT
+(0, 08-фев-2013 21:30:15) Initializing PieTrackIR
+(0, 08-фев-2013 21:30:15) Initializing PiePinch
+(0, 08-фев-2013 21:30:15) Initializing PieBird
+(0, 08-фев-2013 21:30:15) Initializing PieFiveDT
+(0, 08-фев-2013 21:30:15) Starting main
+(0, 08-фев-2013 21:30:15) Application object initialized
+(0, 08-фев-2013 21:30:15) Creating main window
+(0, 08-фев-2013 21:30:15) EditorForm.Create
+(0, 08-фев-2013 21:30:15) Checking command line parameters:
+(0, 08-фев-2013 21:30:15)   MDDCControl.PIE
+(0, 08-фев-2013 21:30:15) ClearMidiGui
+(0, 08-фев-2013 21:30:15)   /run
+(0, 08-фев-2013 21:30:15) Creating debug window
+(0, 08-фев-2013 21:30:15) Assigning exception handler
+(0, 08-фев-2013 21:30:15) Creating debug remote control window
+(0, 08-фев-2013 21:30:15) Running application
+(0, 08-фев-2013 21:30:15) RunButton
+(0, 08-фев-2013 21:30:15) Compile>Run
+(0, 08-фев-2013 21:30:15) CompileCode
+(0, 08-фев-2013 21:30:15) StartingInputMonitor CompileJoystick
+(0, 08-фев-2013 21:30:15) EnumerateJoysticks
+(0, 08-фев-2013 21:30:15) Enumerated... BadGamePad = False
+(0, 08-фев-2013 21:30:15) StartCompileTimeP5 False
+(0, 08-фев-2013 21:30:15) StoppingInputMonitor CompileJoystick
+(0, 08-фев-2013 21:30:15) StartRuntime
+(0, 08-фев-2013 21:30:15) StartKeyboardMonitor
+(0, 08-фев-2013 21:30:15) StartingInputMonitor keyboard
+(0, 08-фев-2013 21:30:15) StartRuntimeJoystick
+(0, 08-фев-2013 21:30:15) StartJoystickMonitor
+(0, 08-фев-2013 21:30:15) StartingInputMonitor Joystick
+(0, 08-фев-2013 21:30:15) EnumerateJoysticks
+(0, 08-фев-2013 21:30:15) Enumerated... BadGamePad = False
+(0, 08-фев-2013 21:30:15) CreateJoystickDevices
+(0, 08-фев-2013 21:30:15) Acquiring joystick 1
+(0, 08-фев-2013 21:30:15) CreateForceFeedbackDevices
+(0, 08-фев-2013 21:30:15) JoystickFFUsed[0] = False
+(0, 08-фев-2013 21:30:15) ************************* False
+(0, 08-фев-2013 21:35:35) FormCloseQuery
+(0, 08-фев-2013 21:35:35) Compile>Stop
+(0, 08-фев-2013 21:35:35) StopRuntime
+(0, 08-фев-2013 21:35:35) StopKeyboardMonitor
+(0, 08-фев-2013 21:35:35) StoppingInputMonitor Keyboard
+(0, 08-фев-2013 21:35:35) StopRuntimeJoystick
+(0, 08-фев-2013 21:35:35) StopJoystickMonitor
+(0, 08-фев-2013 21:35:35) StoppingInputMonitor Joystick
+(0, 08-фев-2013 21:35:35) Application finished
+(0, 08-фев-2013 21:35:35) Destroying EditorForm
+(0, 08-фев-2013 21:35:35) Finalizing PieFiveDT
+(0, 08-фев-2013 21:35:35) Finalizing PieBird
+(0, 08-фев-2013 21:35:35) Finalizing PiePinch
+(0, 08-фев-2013 21:35:35) Finalizing PieTrackIR
+(0, 08-фев-2013 21:35:35) Finalizing PiePPT
+(0, 08-фев-2013 21:35:35) Finalizing PieFastrak
+(0, 08-фев-2013 21:35:35) Finalizing PieIntersense
+(0, 08-фев-2013 21:35:35) Finalizing PieZ800
+(0, 08-фев-2013 21:35:35) Finalizing PieCursors
+(0, 08-фев-2013 21:35:35) Finalizing PieWindow
+(0, 08-фев-2013 21:35:35) Finalizing PieScreen
+(0, 08-фев-2013 21:35:35) Finalizing Pie Speech Recognition
+(0, 08-фев-2013 21:35:35) Finalizing PieRemote
+(0, 08-фев-2013 21:35:35) Finalizing PiePPJoy
+(0, 08-фев-2013 21:35:35) Finalizing PieMidi
+(0, 08-фев-2013 21:35:35) Finalizing PieP5
+(0, 08-фев-2013 21:35:35) Finalizing PieJoystick
+(0, 08-фев-2013 21:35:35) Finalizing PieStatement
+(0, 08-фев-2013 21:35:35) Finalizing PieFunction
+(0, 08-фев-2013 21:35:35) Finalizing PiePie
+(0, 08-фев-2013 21:35:35) Finalizing PieOSC
+(0, 08-фев-2013 21:35:35) Finalizing PieKeyboard
+(0, 08-фев-2013 21:35:35) Finalizing PieMouse
+(0, 08-фев-2013 21:35:35) Finalizing PieVariables
+(0, 08-фев-2013 21:35:35) Finalizing PieSpeech
+(0, 08-фев-2013 21:35:35) Finalizing PieLog
+(0, 08-фев-2013 21:35:35) Closing log file

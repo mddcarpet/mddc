@@ -1,0 +1,8 @@
+﻿
+Key.Left = Joystick1.Button1
+Key.Right = Joystick1.Button4
+Key.Up = Joystick1.Button3
+Key.Down = Joystick1.Button2
+Key.Enter = Joystick1.Button9
+Key.Escape = Joystick1.Button10
+

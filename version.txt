@@ -1,0 +1,9 @@
+2013-04-11
+"Public version 1"
+2013-02-10 public release
+http://mddc.jirimaha.com/
+https://docs.google.com/file/d/0B5oMz4B4_2X4eFVpN3RhSWpESTQ/edit?usp=sharing MDDC-bin.zip
+https://docs.google.com/file/d/0B5oMz4B4_2X4YXRraTFxbU52bVE/edit?usp=sharing MDDC-src-UDK.zip
+2013-02-11 18:00 presented in school (straight A!)
+Contains GlovePIE 0.45
+http://glovepie.org/glovepie.php

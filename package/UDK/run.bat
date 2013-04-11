@@ -1,0 +1,1 @@
+Binaries\Win32\udk.exe MainMenu-new?game=MDDCGame.MDDCGame -fullscreen -resx=1024 -resy=768 %*
