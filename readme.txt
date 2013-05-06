@@ -9,3 +9,5 @@ UDKGame\Content path:
 UDKGame\Config\DefaultEngineUDK.ini
 [Core.System]
 +Paths=..\..\UDKGame\Content
+
+FB: Why do we need the previously mentioned information (UDKGame\Content path)?

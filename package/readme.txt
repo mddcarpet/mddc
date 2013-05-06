@@ -1,6 +1,6 @@
 Magic Dance Dance Carpet
 
-mddcarpet@googlegroups.com
+mddc.jirimaha.com
 
 
 To run the game with dance pad:
