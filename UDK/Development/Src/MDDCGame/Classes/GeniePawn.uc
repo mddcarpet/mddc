@@ -23,6 +23,13 @@ var Rotator GenieRotation;
 
 var const float MinVerticalLocation;
 
+var float ProbeRange;
+var Vector ProbeEndLocal;
+var Vector ProbeLeftStartLocal;
+var Vector ProbeLeftEndLocal;
+var Vector ProbeRightStartLocal;
+var Vector ProbeRightEndLocal;
+
 // http://wiki.beyondunreal.com/Legacy:Quaternions_In_Unreal_Tournament#Vector_expression
 // Sets the components of a vector. Vect cannot be used as it will not accept an expression.
 static function vector eVect( float x , float y , float z )
@@ -42,6 +49,15 @@ static function string QuatToString(quat Other)
 	return result;
 }
 
+simulated event PreBeginPlay()
+{
+	ProbeEndLocal = eVect(ProbeRange, 0, 0);
+	ProbeLeftStartLocal = vect(0, -80, 0);
+	ProbeLeftEndLocal = ProbeLeftStartLocal + ProbeEndLocal;
+	ProbeRightStartLocal = vect(0, 80, 0);
+	ProbeRightEndLocal = ProbeRightStartLocal + ProbeEndLocal;
+}
+
 simulated function Tick(float DeltaTime)
 {
 	local Vector HorizontalVelocity;
@@ -53,6 +69,19 @@ simulated function Tick(float DeltaTime)
 	local Vector RotationAxis;
 	local float VerticalLocation;
 	local float VelocityDotLocation;
+	local Vector ProbeLeftStartGlobal;
+	local Vector ProbeLeftEndGlobal;
+	local Vector ProbeRightStartGlobal;
+	local Vector ProbeRightEndGlobal;
+	local float TurnDirection;
+	local float TurnRateCurrent;
+	local Vector HitLocation;
+	local Vector HitNormal;
+	local bool ProbeLeftHit;
+	local float ProbeLeftHitDistance;
+	local bool ProbeRightHit;
+	local float ProbeRightHitDistance;
+	local float HitDistance;
 
 	if (VSize(Velocity) > 0)
 	{
@@ -108,15 +137,78 @@ simulated function Tick(float DeltaTime)
 			}
 		}
 
+		// Avoid obstacles
+		ProbeLeftStartGlobal = Location + (ProbeLeftStartLocal >> Rotation);
+		ProbeLeftEndGlobal = Location + (ProbeLeftEndLocal >> Rotation);
+		if (Trace(HitLocation, HitNormal, ProbeLeftEndGlobal, ProbeLeftStartGlobal) != none)
+		{
+			ProbeLeftHit = true;
+			ProbeLeftHitDistance = VSize(HitLocation - ProbeLeftStartGlobal);
+			DrawDebugLine(ProbeLeftStartGlobal, ProbeLeftEndGlobal, 255, 0, 0);
+		}
+		else
+		{
+			ProbeLeftHit = false;
+			DrawDebugLine(ProbeLeftStartGlobal, ProbeLeftEndGlobal, 0, 255, 0);
+		}
+		ProbeRightStartGlobal = Location + (ProbeRightStartLocal >> Rotation);
+		ProbeRightEndGlobal = Location + (ProbeRightEndLocal >> Rotation);
+		if (Trace(HitLocation, HitNormal, ProbeRightEndGlobal, ProbeRightStartGlobal) != none)
+		{
+			ProbeRightHit = true;
+			ProbeRightHitDistance = VSize(HitLocation - ProbeRightStartGlobal);
+			DrawDebugLine(ProbeRightStartGlobal, ProbeRightEndGlobal, 255, 0, 0);
+		}
+		else
+		{
+			ProbeRightHit = false;
+			DrawDebugLine(ProbeRightStartGlobal, ProbeRightEndGlobal, 0, 255, 0);
+		}
+		if (ProbeLeftHit || ProbeRightHit)
+		{
+			TurnDirection = 0.0;
+			if (!ProbeLeftHit || (ProbeRightHit && ProbeRightHitDistance < ProbeLeftHitDistance))
+			{
+				HitDistance = ProbeRightHitDistance;
+				TurnDirection = -1.0;
+			}
+			if (!ProbeRightHit || (ProbeLeftHit && ProbeLeftHitDistance < ProbeRightHitDistance))
+			{
+				HitDistance = ProbeLeftHitDistance;
+				TurnDirection = 1.0;
+			}
+			if (HitDistance >= 0.01)
+			{
+				// Solution 2:
+				//TurnRateCurrent = 10 * (1 - (HitDistance / ProbeRange));
+
+				// Solution 1:
+				TurnRateCurrent = 100.0 / HitDistance;
+				TurnRateCurrent *= 1 + 10*(0.5**TurnRateCurrent);
+
+				// Solution 3:
+				//TurnRateCurrent = 1 - (HitDistance / ProbeRange);
+				//TurnRateCurrent = -2*TurnRateCurrent*TurnRateCurrent + TurnRateCurrent + 1;
+				//TurnRateCurrent *= 10;
+
+				TurnRateCurrent *= TurnDirection;
+				DeltaAngle = DeltaTime * TurnRateCurrent; // Angle to rotate Velocity.
+				DeltaQuat = QuatFromAxisAndAngle(-Location, DeltaAngle); // Quaternion that does the rotation.
+				Velocity = QuatRotateVector(DeltaQuat, Velocity); // Engage!
+			}
+		}
+
 		// Rotate Velocity around center to simulate excentric gravitation (main function).
 		// Center is the point with coordinates (0, 0, 0).
 		VerticalVelocity = ProjectOnTo(Velocity, Location); // The component of Velocity parallel with Location
 		HorizontalVelocity = Velocity - VerticalVelocity; // The component of Velocity perpendicular to Location
 		HorizontalVelocitySize = VSize(HorizontalVelocity); // Horizontal speed
 		HorizontalVelocityAngleSpeed = HorizontalVelocitySize / VSize(Location);
-		// By travelling for one second at the present horizontal speed along the current orbit, the Velocity direction will turn by HorizontalVelocityAngleSpeed radians.
+		// By travelling for one second at the present horizontal speed along the current orbit,
+		// the Velocity direction will turn by HorizontalVelocityAngleSpeed radians.
 		DeltaAngle = HorizontalVelocityAngleSpeed * DeltaTime;
-		// By travelling for DeltaTime at the present horizontal speed along the current orbit, the Velocity direction will turn by DeltaAngle radians.
+		// By travelling for DeltaTime at the present horizontal speed along the current orbit,
+		// the Velocity direction will turn by DeltaAngle radians.
 		RotationAxis = Location cross Velocity; // Velocity will rotate around axis that is perpendicular to both Location and Velocity.
 		DeltaQuat = QuatFromAxisAndAngle(RotationAxis, DeltaAngle); // The quaternion that will do the proper rotation.
 		Velocity = QuatRotateVector(DeltaQuat, Velocity); // Engage rotation!
@@ -147,10 +239,12 @@ simulated function name GetDefaultCameraMode(PlayerController RequestedBy)
 
 defaultproperties
 {
+	ProbeRange=500.0
+
 	TickGroup=TG_PreAsyncWork // Necessary for proper rotation of PlayerController's Pawn
 	Physics=PHYS_Flying
 	//AccelRate=32768.0
-	AccelRate=+1000.0
+	AccelRate=+100.0
 	
 	bFrictionCompensation=true
 	bFrictionCompensationOnlySphere=true
@@ -244,8 +338,8 @@ defaultproperties
 	// Setting up a proper collision cylinder
 	CollisionType=COLLIDE_BlockAll
 	Begin Object Name=CollisionCylinder
-		CollisionRadius=+100.0
-		CollisionHeight=+100.0
+		CollisionRadius=+50.0
+		CollisionHeight=+50.0
 	End Object
 	CylinderComponent=CollisionCylinder
 }
