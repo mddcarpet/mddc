@@ -9,12 +9,3 @@ Copy the content of the directory UDK into your UDK directory (for example C:\UD
 
 How to run:
 Run MDDCGame\PLAY_MDDC_*.bat in your UDK directory (for example C:\UDK\UDK-2012-07\MDDCGame\PLAY_MDDC_Menu_fullscreen.bat).
-
-
-UDKGame\Content path:
-
-UDKGame\Config\DefaultEngineUDK.ini
-[Core.System]
-+Paths=..\..\UDKGame\Content
-
-FB: Why do we need the previously mentioned information (UDKGame\Content path)?
