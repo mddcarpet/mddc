@@ -144,12 +144,12 @@ simulated function Tick(float DeltaTime)
 		{
 			ProbeLeftHit = true;
 			ProbeLeftHitDistance = VSize(HitLocation - ProbeLeftStartGlobal);
-			DrawDebugLine(ProbeLeftStartGlobal, ProbeLeftEndGlobal, 255, 0, 0);
+			//DrawDebugLine(ProbeLeftStartGlobal, ProbeLeftEndGlobal, 255, 0, 0);
 		}
 		else
 		{
 			ProbeLeftHit = false;
-			DrawDebugLine(ProbeLeftStartGlobal, ProbeLeftEndGlobal, 0, 255, 0);
+			//DrawDebugLine(ProbeLeftStartGlobal, ProbeLeftEndGlobal, 0, 255, 0);
 		}
 		ProbeRightStartGlobal = Location + (ProbeRightStartLocal >> Rotation);
 		ProbeRightEndGlobal = Location + (ProbeRightEndLocal >> Rotation);
@@ -157,12 +157,12 @@ simulated function Tick(float DeltaTime)
 		{
 			ProbeRightHit = true;
 			ProbeRightHitDistance = VSize(HitLocation - ProbeRightStartGlobal);
-			DrawDebugLine(ProbeRightStartGlobal, ProbeRightEndGlobal, 255, 0, 0);
+			//DrawDebugLine(ProbeRightStartGlobal, ProbeRightEndGlobal, 255, 0, 0);
 		}
 		else
 		{
 			ProbeRightHit = false;
-			DrawDebugLine(ProbeRightStartGlobal, ProbeRightEndGlobal, 0, 255, 0);
+			//DrawDebugLine(ProbeRightStartGlobal, ProbeRightEndGlobal, 0, 255, 0);
 		}
 		if (ProbeLeftHit || ProbeRightHit)
 		{
