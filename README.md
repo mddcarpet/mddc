@@ -8,7 +8,14 @@
 
 ## How to install
 
-Clone this repository directly into the UDK directory (for example `C:\UDK\UDK-2012-07`).
+Install UDK.
+In the UDK installation directory (for example `C:\UDK\UDK-2012-07`), run:
+
+```
+git init
+git remote add origin https://github.com/filipbartek/mddc.git
+git pull origin master
+```
 
 ## How to run
 
