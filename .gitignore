@@ -1,0 +1,17 @@
+# Ignore the standard UDK directories
+/Binaries/
+# Note: We ignore each of the directories "/Development/Src/*/" separately
+# so that we can later un-ignore the directory "/Development/Src/MDDCGame/".
+/Development/Flash/
+/Development/Src/*/
+/Engine/
+/UDKGame/
+
+# Un-ignore the custom MDDC source directory nested under the standard UDK source directory.
+!/Development/Src/MDDCGame/
+
+# Build products
+/MDDCGame/Config/Engine.ini
+/MDDCGame/Config/Game.ini
+/MDDCGame/Config/Input.ini
+/MDDCGame/Script/

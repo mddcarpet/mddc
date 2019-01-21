@@ -8,8 +8,8 @@
 
 ## How to install
 
-Copy the content of the directory `UDK` into your UDK directory (for example `C:\UDK\UDK-2012-07`).
+Clone this repository directly into the UDK directory (for example `C:\UDK\UDK-2012-07`).
 
 ## How to run
 
-Run `MDDCGame\PLAY_MDDC_*.bat` in your UDK directory (for example `C:\UDK\UDK-2012-07\MDDCGame\PLAY_MDDC_Menu_fullscreen.bat`).
+Run `MDDCGame\PLAY_MDDC_*.bat`.
