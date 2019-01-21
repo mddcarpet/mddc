@@ -9,7 +9,7 @@
 ## How to install
 
 Install UDK.
-In the UDK installation directory (for example `C:\UDK\UDK-2012-07`), run:
+In the UDK installation directory (for example `C:\UDK\UDK-2015-01`), run:
 
 ```
 git init
