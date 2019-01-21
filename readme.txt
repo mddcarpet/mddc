@@ -3,7 +3,6 @@ https://groups.google.com/d/forum/mddcarpet
 https://github.com/filipbartek/mddc
 
 mddcarpet@googlegroups.com
-Filip.Bartek@hotmail.com
 
 How to install:
 Copy the content of the directory UDK into your UDK directory (for example C:\UDK\UDK-2012-07).
