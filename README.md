@@ -26,3 +26,4 @@ Run `MDDCGame\PLAY_MDDC_*.bat`.
 * Version: 2015-02
 * Download: [Indie DB](https://www.indiedb.com/engines/unreal-development-kit/downloads/february-2015-unreal-development-kit-udk)
 * Documentation: [UDK](https://api.unrealengine.com/udk/Three/WebHome.html)
+    * [Google search](https://www.google.com/search?q=site%3Ahttp%3A%2F%2Fapi.unrealengine.com%2Fudk%2FThree)
