@@ -11,7 +11,4 @@
 !/Development/Src/MDDCGame/
 
 # Build products
-/MDDCGame/Config/Engine.ini
-/MDDCGame/Config/Game.ini
-/MDDCGame/Config/Input.ini
 /MDDCGame/Script/
