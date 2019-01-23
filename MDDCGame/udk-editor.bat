@@ -1,5 +1,1 @@
-setlocal
-call global.bat
-call local.bat
-%udkeditor% %ini% %*
-endlocal
+udk editor %*
