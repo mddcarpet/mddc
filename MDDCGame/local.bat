@@ -4,6 +4,7 @@ set gamename=MDDC
 
 rem DEF* inis are redirected so that we can use our own configuration without altering the default UDK files.
 rem Non-DEF inis are redirected so that the default non-DEF inis needn't be overwritten. (FB: At least I think so.)
+rem https://api.unrealengine.com/udk/Three/CommandLineArguments.html#INI/Config%20Files
 set ini=^
 -DEFENGINEINI=..\..\%gamename%Game\Config\DefaultEngine.ini ^
 -ENGINEINI=..\..\%gamename%Game\Config\Engine.ini ^
