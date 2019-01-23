@@ -1,1 +1,2 @@
-udk MainMenu-new?game=MDDCGame.MDDCGame -LOG -fullscreen -resx=1024 -resy=768 -BENCHMARK -FPS=30 -DUMPMOVIE -MAXQUALITYMODE %*
+rem https://api.unrealengine.com/udk/Three/CapturingCinematicsAndGameplay.html
+play -BENCHMARK -FPS=25 -DUMPMOVIE -MAXQUALITYMODE %*

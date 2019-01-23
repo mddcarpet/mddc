@@ -1,1 +1,1 @@
-udk MainMenu-new?game=MDDCGame.MDDCGame -LOG -resx=1024 -resy=768 %*
+udk MainMenu-new?game=MDDCGame.MDDCGame -resx=1024 -resy=768 %*
