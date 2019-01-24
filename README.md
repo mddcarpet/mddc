@@ -19,7 +19,7 @@ git pull origin master
 
 ## How to run
 
-Run `MDDCGame\PLAY_MDDC_*.bat`.
+Run `MDDCGame\play*.bat`.
 
 ## UDK
 
