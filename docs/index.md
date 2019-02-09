@@ -32,8 +32,8 @@ in Prague, Film and TV School of Academy of Performing Arts in Prague Academy
 of Art, Architecture and Design in Prague and Czech Technical University in
 Prague.
 
-The game is licensed under a Creative Commons
-Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+The game is licensed under a
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
 
 # System requirements
 
