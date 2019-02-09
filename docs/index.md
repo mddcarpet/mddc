@@ -10,9 +10,9 @@ title: Magic Dance Dance Carpet
 
 ## The idea
 
-At the begining, we had a dancepad, and of course, we played Stepmania. But we
+At the begining, we had a dance pad, and of course, we played Stepmania. But we
 felt that the potential of the controller isn't fully exploited. So we tried to
-think of a game that would utilize the dancepad in a new, more complex way.
+think of a game that would utilize the dance pad in a new, more complex way.
 What could be controlled with your feet, while stood on? Suddenly, it was clear
 – we will be making a magic carpet flight simulator.
 
