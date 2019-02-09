@@ -10,15 +10,30 @@ title: Magic Dance Dance Carpet
 
 ## The idea
 
-At the begining, we had a dancepad, and of course, we played Stepmania. But we felt that the potential of the controller isn't fully exploited. So we tried to think of a game that would utilize the dancepad in a new, more complex way. What could be controlled with your feet, while stood on? Suddenly, it was clear – we will be making a magic carpet flight simulator.
+At the begining, we had a dancepad, and of course, we played Stepmania. But we
+felt that the potential of the controller isn't fully exploited. So we tried to
+think of a game that would utilize the dancepad in a new, more complex way.
+What could be controlled with your feet, while stood on? Suddenly, it was clear
+– we will be making a magic carpet flight simulator.
 
 ## The game
 
-You are a genie. You were summoned from a bottle to fulfill a wish. To complete your task, you may only use your flying carpet. You can't die, you can't fail, you can't deny the request and you can't escape, since all your world is just the inside of another bottle. Only after you grant the summoner his wish, you are free to leave, to a bigger world in a bigger bottle. There is no hurry then, you may as well relax and enjoy the ride.
+You are a genie. You were summoned from a bottle to fulfill a wish. To complete
+your task, you may only use your flying carpet. You can't die, you can't fail,
+you can't deny the request and you can't escape, since all your world is just
+the inside of another bottle. Only after you grant the summoner his wish, you
+are free to leave, to a bigger world in a bigger bottle. There is no hurry
+then, you may as well relax and enjoy the ride.
 
-Developed for the course <a href="http://artemis.ms.mff.cuni.cz/main/tiki-index.php?page=Computer+games+development">Computer games development</a>, a joint effort of Charles University in Prague, Film and TV School of Academy of Performing Arts in Prague Academy of Art, Architecture and Design in Prague and Czech Technical University in Prague.
+Developed for the course
+<a href="http://artemis.ms.mff.cuni.cz/main/tiki-index.php?page=Computer+game+development">Computer games development</a>,
+a joint effort of Charles University
+in Prague, Film and TV School of Academy of Performing Arts in Prague Academy
+of Art, Architecture and Design in Prague and Czech Technical University in
+Prague.
 
-The game is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+The game is licensed under a Creative Commons
+Attribution-NonCommercial-ShareAlike 3.0 Unported License.
 
 # System requirements
 
@@ -30,7 +45,10 @@ Windows PC with DirectX 9 compliant video card
 
 Dance pad or Keyboard
 
-Note that Magic Dance Dance Carpet doesn't support dance pad control directly. If you want to play the game the way it was intended, you need to use a keyboard emulation utility, for example GlovePIE or JoyToKey. GlovePIE with an appropriate configuration file is bundled with the game.
+Note that Magic Dance Dance Carpet doesn't support dance pad control directly.
+If you want to play the game the way it was intended, you need to use a
+keyboard emulation utility, for example GlovePIE or JoyToKey. GlovePIE with an
+appropriate configuration file is bundled with the game.
 
 # Controls
 
@@ -46,11 +64,14 @@ left, right, up, down, Enter, Esc
 
 ## Team
 
-Filip Bártek (lead programmer), Jan Drška (3D graphics & animation), Jakub Janovský (game design), Jiří Maha (graphics & enviroment design), Margarita Vishnyaková (second programmer and 2D graphics)
+Filip Bártek (lead programmer), Jan Drška (3D graphics & animation), Jakub
+Janovský (game design), Jiří Maha (graphics & enviroment design), Margarita
+Vishnyaková (second programmer and 2D graphics)
 
 ## We would also like to thank
 
-Ondřej Janovský & Stanislava Karbušická (concept art), Otakar Nieder & Michal Bída (consulting), Anatoly Torbin (flash animation)
+Ondřej Janovský & Stanislava Karbušická (concept art), Otakar Nieder &
+Michal Bída (consulting), Anatoly Torbin (flash animation)
 
 # Used software & content
 
