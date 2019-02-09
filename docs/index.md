@@ -2,7 +2,10 @@
 title: Magic Dance Dance Carpet
 ---
 
-<img src="assets/mddc.jpg">
+<!-- https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php -->
+<div class="videoWrapper">
+<iframe src="https://www.youtube-nocookie.com/embed/5cXR576lDHI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 <a href="https://docs.google.com/file/d/0B5oMz4B4_2X4eFVpN3RhSWpESTQ/edit?usp=sharing">MDDC-bin.zip (public version 1; 2013-02-10)</a>
 
