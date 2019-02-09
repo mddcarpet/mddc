@@ -64,14 +64,17 @@ left, right, up, down, Enter, Esc
 
 ## Team
 
-Filip Bártek (lead programmer), Jan Drška (3D graphics & animation), Jakub
-Janovský (game design), Jiří Maha (graphics & enviroment design), Margarita
-Vishnyaková (second programmer and 2D graphics)
+* Filip Bártek (lead programmer)
+* Jan Drška (3D graphics & animation)
+* Jakub Janovský (game design)
+* Jiří Maha (graphics & enviroment design)
+* Margarita Vishnyaková (second programmer and 2D graphics)
 
 ## We would also like to thank
 
-Ondřej Janovský & Stanislava Karbušická (concept art), Otakar Nieder &
-Michal Bída (consulting), Anatoly Torbin (flash animation)
+* Ondřej Janovský & Stanislava Karbušická (concept art)
+* Otakar Nieder & Michal Bída (consulting)
+* Anatoly Torbin (flash animation)
 
 # Used software & content
 
