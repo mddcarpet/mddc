@@ -1,8 +1,0 @@
-title: Magic Dance Dance Carpet
-description: A magic carpet flight simulator
-repository: mddcarpet/mddc
-theme: jekyll-theme-cayman
-exclude:
-  - README.md
-plugins:
-  - jekyll-sitemap
